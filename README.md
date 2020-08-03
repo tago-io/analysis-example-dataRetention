@@ -1,9 +1,9 @@
 ## What this does
-Use your account token to get the list of devices, then go to each device removing the variables you choosed.
+Use your account token to get the list of devices, then go to each device removing the variables you chooses.
 
-## How to run the script on Tago
+## How to run the script on TagoIO
 Do your own modifications if you want.<br>
-Upload to Tago analysis, in the admin website.<br>
+Upload to TagoIO analysis, in the admin website.<br>
 Add the environment variable `account_token` with the account token of your choice.
 
 ## How to run the script from my computer
@@ -13,5 +13,4 @@ Open the analysis.js, change `MY-ANALYSIS-TOKEN-HERE` line for your analysis tok
 Open the terminal and run:
 
 `npm install`<br>
-`node .`
-
+`node analysis`
