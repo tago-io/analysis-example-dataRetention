@@ -5,7 +5,8 @@
   "main": "analysis.js",
   "license": "MIT",
   "dependencies": {
-    "@tago-io/sdk": "^10.0.0-beta.23"
+    "@tago-io/sdk": "^10.0.0-beta.23",
+    "dayjs": "^1.9.7"
   },
   "repository": "tago-io/analysis-example-dataRetention"
 }
