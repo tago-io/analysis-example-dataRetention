@@ -13,7 +13,7 @@
  */
 
 const { Analysis, Account, Device, Utils } = require("@tago-io/sdk");
-const moment = require("moment-timezone");
+const dayjs = require('dayjs');
 
 // The function myAnalysis will run when you execute your analysis
 async function myAnalysis(context) {
@@ -47,7 +47,7 @@ async function myAnalysis(context) {
 
     const variables = ["variable1", "variable2"];
     const qty = 100; // remove 100 registers of each variable
-    const end_date = moment().subtract(1, "month").toISOString(); // registers old than 1 month
+    const end_date = dayjs().subtract(1, "month").toISOString(); // registers old than 1 month
 
     await device
       .deleteData({ variables, qty, end_date })
