@@ -15,8 +15,8 @@
 const { Analysis, Resources } = require("@tago-io/sdk");
 const dayjs = require('dayjs');
 
-// The function myAnalysis will run when you execute your analysis
-async function myAnalysis(context) {
+// The function startAnalysis will run when you execute your analysis
+async function startAnalysis(context) {
   // Bellow is an empty filter.
   // Examples of filter:
   // { tags: [{ key: 'tag-key', value: 'tag-value' }]}
@@ -41,7 +41,7 @@ async function myAnalysis(context) {
   }
 }
 
-module.exports = new Analysis(myAnalysis);
+Analysis.use(startAnalysis);
 
 // To run analysis on your machine (external)
 // module.exports = new Analysis(myAnalysis, { token: "YOUR-TOKEN" });
